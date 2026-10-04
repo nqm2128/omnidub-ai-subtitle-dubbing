@@ -240,7 +240,7 @@ def lookup(table, stem):
 
 plan, problems, warns = [], [], []
 for lang, rows in VOICES.items():
-    folder = os.path.join(ROOT, lang)
+    folder = os.path.join(ROOT, lang) if lang else ROOT
     if not os.path.isdir(folder):
         problems.append(f"Thiếu thư mục {folder}")
         continue
