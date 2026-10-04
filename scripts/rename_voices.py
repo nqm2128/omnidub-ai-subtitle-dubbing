@@ -231,7 +231,7 @@ def clean(s):
     return re.sub(r'[\\/:*?"<>|]', "", s).strip()
 
 def lookup(table, stem):
-    head = norm(stem.split("_")[0])
+    head = norm(re.sub(r"^\(.*?\)\s*", "", stem.split("_")[0]))
     if head in table:
         return head, table[head]
     # tên gốc bị cắt cụt: chỉ chấp nhận khi đủ dài và khớp duy nhất
