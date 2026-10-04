@@ -1,0 +1,28 @@
+name: Rename voice clones
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Đổi tên thật và đẩy lên nhánh rename-voices (bỏ chọn = chỉ xem trước)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Chạy script đổi tên
+        run: python3 scripts/rename_voices.py ${{ inputs.apply && '--apply' || '' }}
+      - name: Commit và push lên nhánh mới
+        if: ${{ inputs.apply }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b rename-voices
+          git add -A voice_clones
+          git commit -m "Rename voice clones: localized descriptions + gender suffix"
+          git push origin rename-voices
