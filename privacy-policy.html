@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - OmniDub: AI Subtitle Dubbing</title>
+  <style>
+    :root { --primary:#4F46E5; --primary-light:#EEF2F6; --text-dark:#1E293B; --text-muted:#475569; --bg-card:#fff; --bg-page:#F8FAFC; --border-color:#E2E8F0; --success:#10B981; --success-bg:#F0FDF4; --warning-bg:#FFFBEB; --warning-border:#F59E0B; --info-bg:#EFF6FF; --info-border:#3B82F6; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; color:var(--text-dark); background:var(--bg-page); line-height:1.65; padding:24px 16px; }
+    .container { max-width:900px; margin:0 auto; background:var(--bg-card); border-radius:20px; box-shadow:0 10px 25px -5px rgba(0,0,0,.05); border:1px solid var(--border-color); overflow:hidden; }
+    .header { background:linear-gradient(135deg,#4338CA 0%,#4F46E5 50%,#6366F1 100%); color:#fff; padding:44px 32px; text-align:center; }
+    .header h1 { font-size:2.2rem; margin-bottom:8px; }
+    .header p { font-size:1.1rem; color:rgba(255,255,255,.9); }
+    .badge { display:inline-block; background:rgba(255,255,255,.2); padding:6px 16px; border-radius:50px; font-size:.85rem; margin-top:14px; }
+    .content { padding:36px 32px; }
+    .box { padding:20px; border-radius:10px; margin:0 0 28px; border-left:5px solid; }
+    .box h3 { font-size:1.1rem; margin-bottom:8px; }
+    .box p,.box li { font-size:.96rem; margin-bottom:6px; }
+    .box ul { margin-left:20px; }
+    .summary-box { background:var(--success-bg); border-color:var(--success); }
+    .summary-box h3,.summary-box p { color:#14532D; }
+    .disclosure-box { background:var(--info-bg); border-color:var(--info-border); }
+    .disclosure-box h3,.disclosure-box p { color:#1E3A8A; }
+    .compliance-box { background:var(--warning-bg); border-color:var(--warning-border); }
+    .compliance-box h3,.compliance-box li,.compliance-box p { color:#78350F; }
+    section { margin-bottom:36px; }
+    h2 { font-size:1.35rem; color:#0F172A; margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--primary-light); }
+    p { color:var(--text-muted); margin-bottom:14px; }
+    ul { margin-left:24px; margin-bottom:16px; color:var(--text-muted); }
+    li { margin-bottom:8px; }
+    strong { color:var(--text-dark); }
+    code { background:#F1F5F9; padding:1px 5px; border-radius:4px; font-size:.9em; }
+    .table-wrap { overflow-x:auto; }
+    .data-table { width:100%; border-collapse:collapse; margin:18px 0; font-size:.93rem; }
+    .data-table th,.data-table td { border:1px solid var(--border-color); padding:10px 12px; text-align:left; vertical-align:top; }
+    .data-table th { background:var(--primary-light); }
+    .data-table tr:nth-child(even) { background:#FAFAFC; }
+    a { color:var(--primary); font-weight:600; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .footer { background:#F8FAFC; border-top:1px solid var(--border-color); padding:24px; text-align:center; font-size:.9rem; color:var(--text-muted); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Privacy Policy</h1>
+    <p>OmniDub: Lồng tiếng phụ đề AI (OmniDub: AI Subtitle Dubbing)</p>
+    <span class="badge">Effective Date: October 7, 2026</span>
+  </div>
+
+  <div class="content">
+
+    <div class="box summary-box">
+      <h3>Summary</h3>
+      <p>OmniDub reads the subtitles of the video you are watching, translates them, and reads them aloud. You choose one of three voice options, and <strong>where your subtitle text goes depends on that choice</strong>: (1) your browser's built-in speech (Web Speech), (2) the <strong>OmniDub voice service</strong>, run by the developer on Cloudflare Workers, which forwards text to Microsoft's text-to-speech service, or (3) a <strong>TTS server that you run yourself</strong> (on your own computer, or in your own Google Colab session). To use the OmniDub voice service you request an access token through a Telegram bot, so that service stores your <strong>Telegram user ID and username</strong>. OmniDub has no API-key features and does not call any AI chatbot by itself. We do not sell user data, run advertising or analytics trackers, or use data for any other purpose.</p>
+    </div>
+
+    <div class="box disclosure-box">
+      <h3>Prominent Disclosure</h3>
+      <p><strong>OmniDub reads subtitle text and playback state from the video page you are watching, in order to translate and dub it.</strong> Subtitle text leaves your device only when dubbing is on and you selected an option that needs it: Google Translate for translation, and the OmniDub voice service for voice option (2), as described in Sections 3 and 5. With voice option (3), text goes only to the server address you entered.</p>
+      <p>You can turn OmniDub off at any time from the toolbar popup or uninstall it.</p>
+    </div>
+
+    <section>
+      <h2>1. Introduction &amp; Single Purpose</h2>
+      <p><strong>OmniDub: Lồng tiếng phụ đề AI</strong> ("OmniDub", "we", "us") is a browser extension with one single purpose: helping users understand foreign-language video by providing AI-assisted subtitle translation and speech dubbing (text-to-speech). This policy describes how user data is <strong>collected</strong>, <strong>handled</strong>, <strong>stored</strong> and <strong>shared</strong>, in line with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data/" target="_blank" rel="noopener">Chrome Web Store User Data Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>2. Data Collection</h2>
+      <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th style="width:22%">Data</th><th style="width:38%">What exactly</th><th>How / when</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Website content</strong></td><td>Subtitle/caption text and timing (.vtt, .srt, XML, JSON) loaded by the video player on the page you are watching.</td><td>Read from the page's media element or from subtitle network requests while dubbing is active. Where it is sent is described in Section 5.</td></tr>
+          <tr><td><strong>User activity (playback state)</strong></td><td>Play, pause, seek events and current playback time of the video.</td><td>Read locally by content scripts only to keep the dubbed audio in sync. Not transmitted.</td></tr>
+          <tr><td><strong>Page address (URL) of the active tab</strong></td><td>URL and navigation state of tabs.</td><td>Used locally to detect when you switch or reload a video so subtitles attach to the right player. Not sent to our service and not stored.</td></tr>
+          <tr><td><strong>Subtitles in Subtitle Studio</strong></td><td>Subtitle text you load, paste, edit or save in the OmniDub Subtitle Studio page.</td><td>Handled locally in the extension. The "Copy AI Prompt" button writes subtitles and a translation prompt to your clipboard when you click it; the "Paste AI Result" button reads your clipboard only when you click it. OmniDub does not send this text to any AI service. If you paste it into an AI website (for example ChatGPT, Claude, Gemini or DeepSeek), that is your own action and that website's privacy policy applies.</td></tr>
+          <tr><td><strong>Settings &amp; preferences</strong></td><td>Target language, volume, speed, pitch, selected voice, toggles, and the server address if you use your own TTS server.</td><td>Saved on your device in browser extension storage.</td></tr>
+          <tr><td><strong>Access token (authentication)</strong></td><td>A random token that you paste into the extension settings to use the OmniDub voice service.</td><td>Stored on your device; sent to the OmniDub voice service with each voice request.</td></tr>
+          <tr><td><strong>Telegram identifiers (personal identification)</strong></td><td>Telegram numeric user ID, username (or first name), chat ID, and whether you are a member of the OmniDub Telegram group.</td><td>Collected by our Telegram bot only when you message the bot privately (<code>/start</code> or <code>/gettoken</code>) to get a token. Messages in groups are ignored.</td></tr>
+          <tr><td><strong>Technical request data</strong></td><td>IP address and request metadata.</td><td>Seen by the services your requests reach (for example Cloudflare, Google, Microsoft) as part of ordinary network requests. OmniDub does not store IP addresses.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><strong>We do not collect:</strong> your name or email (unless you email us), payment or financial information, passwords or cookies of the sites you visit, keystrokes or form input, or your browsing history as a list. OmniDub's content scripts are not run on a set of sensitive sites (Gmail, Google account pages, and popular AI chat sites).</p>
+    </section>
+
+    <section>
+      <h2>3. Data Handling &amp; Use</h2>
+      <ul>
+        <li><strong>Translation:</strong> subtitle lines can be translated with Google Translate (<code>translate.googleapis.com</code>). Alternatively you can translate in the Subtitle Studio by copying the prompt and pasting the result back yourself, as described above.</li>
+        <li><strong>Voice synthesis, by the option you choose:</strong></li>
+      </ul>
+      <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th style="width:24%">Voice option</th><th>What happens to the text</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1. Web Speech</strong> (browser built-in)</td><td>Text is passed to your browser's speech engine. With voices installed on your operating system the text stays on your device; some browser voices (for example Google network voices in Chrome) are processed by the browser vendor's servers. OmniDub does not receive it.</td></tr>
+          <tr><td><strong>2. OmniDub voice service</strong> (Microsoft TTS through a Cloudflare Worker)</td><td>The extension sends the text line (up to 500 characters), the voice name and your access token to a Cloudflare Worker run by the developer. The Worker verifies the token, applies a per-user rate limit, requests the audio from Microsoft's text-to-speech service, and returns it. The Worker does <strong>not</strong> save the text or the audio.</td></tr>
+          <tr><td><strong>3. Server TTS</strong> (VieNeu on your own computer, or VieNeu, Piper or OmniVoice in a Colab notebook you run)</td><td>The extension sends the text line and voice choice to the server address you entered (for example <code>http://127.0.0.1</code> or a temporary <code>trycloudflare.com</code> link created by your own Colab session). These servers are run by you, not by OmniDub, and OmniDub never receives this text or audio. In Colab the text is processed in your Colab session under your Google account, and passes through a Cloudflare quick tunnel. Anyone who knows your tunnel link can use your server, so keep it private.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li><strong>Access control and abuse prevention (voice option 2):</strong> the Telegram ID is used to confirm group membership, issue a token, apply rate limits and block abusive accounts. A sampled request counter per user is kept for capacity planning and abuse detection.</li>
+        <li><strong>Synchronization:</strong> playback state is processed in temporary memory to schedule audio in time with the video.</li>
+        <li><strong>No secondary use:</strong> data is never used for advertising, profiling, creditworthiness, or any purpose unrelated to subtitle dubbing.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Storage, Retention &amp; Deletion</h2>
+      <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Data</th><th>Where</th><th>Retention</th><th>Deletion</th></tr></thead>
+        <tbody>
+          <tr><td>Subtitle text &amp; audio in playback</td><td>Browser memory; Worker memory during a request</td><td>Temporary. Not written to a database by OmniDub.</td><td>Cleared when the tab is closed/reloaded or the request ends.</td></tr>
+          <tr><td>Settings, token, subtitle data of videos you dub or save to the extension</td><td>Your device (extension storage)</td><td>Until you reset, remove them or uninstall</td><td>Reset in the popup, remove in the Subtitle Studio, or uninstall.</td></tr>
+          <tr><td>Access token records</td><td>Cloudflare KV (developer's account)</td><td><strong>24 hours</strong>, then automatically deleted</td><td>Automatic.</td></tr>
+          <tr><td>Telegram ID + username + first-token date</td><td>Cloudflare KV</td><td>Kept until you ask us to delete it</td><td>See Section 8.</td></tr>
+          <tr><td>Block flag and request counter (sampled estimate)</td><td>Cloudflare KV</td><td>Kept while the account exists (block flags are kept to prevent abuse)</td><td>See Section 8.</td></tr>
+          <tr><td>Short-lived caches (token validity, rate limit)</td><td>Worker memory</td><td>Minutes to one hour; reset when the Worker restarts</td><td>Automatic.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>All transfers to the OmniDub voice service, Google Translate and Telegram use HTTPS/TLS. Access to the developer's Cloudflare account, Telegram bot and admin tools is restricted to the developer. Data on servers you run yourself (voice option 3) is under your control.</p>
+    </section>
+
+    <section>
+      <h2>5. Sharing &amp; Third Parties</h2>
+      <p>We do not sell or rent user data. Data is shared only with the following parties, only to perform the function you requested:</p>
+      <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Recipient</th><th>Data</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Google Translate</strong> (<code>translate.googleapis.com</code>)</td><td>Subtitle text</td><td>Translation.</td></tr>
+          <tr><td><strong>OmniDub voice service</strong> (Cloudflare Workers, operated by the developer)</td><td>Subtitle text, voice name, access token, request metadata</td><td>Text-to-speech proxy, token verification, rate limiting (voice option 2 only).</td></tr>
+          <tr><td><strong>Microsoft</strong> (speech/translator services)</td><td>Subtitle text and voice name, sent by the OmniDub voice service</td><td>Generating the speech audio. Your token and Telegram ID are not sent to Microsoft.</td></tr>
+          <tr><td><strong>Telegram</strong></td><td>Messages you send to the bot, the bot's replies, membership check of your user ID</td><td>Issuing your access token.</td></tr>
+          <tr><td><strong>Cloudflare</strong></td><td>Requests to the voice service and KV data; traffic through quick tunnels you create in Colab</td><td>Hosting and network provider (data processor).</td></tr>
+          <tr><td><strong>Your own TTS server</strong> (localhost or your Colab session)</td><td>Subtitle text and voice choice</td><td>Speech synthesis, only if you choose voice option 3. Not operated by OmniDub.</td></tr>
+          <tr><td><strong>Browser speech provider</strong></td><td>Subtitle text, depending on the voice you pick</td><td>Only for browser voices that are processed online (voice option 1).</td></tr>
+          <tr><td><strong>Google Fonts</strong></td><td>IP address and browser information, when the Subtitle Studio page loads its fonts</td><td>Displaying the page's typefaces.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>OmniDub shows links to Telegram and Ko-fi. Following those links is your choice and their own privacy policies apply. We may disclose data if required by law or to protect against abuse of the service.</p>
+
+      <div class="box compliance-box">
+        <h3>Chrome Web Store Limited Use Compliance</h3>
+        <p>The use of information received by OmniDub adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements:</p>
+        <ul>
+          <li>We do not sell user data or transfer it to data brokers or advertising platforms.</li>
+          <li>We do not use or transfer user data for personalized, retargeted or interest-based advertising.</li>
+          <li>We do not use or transfer user data to determine creditworthiness or for lending.</li>
+          <li>We use or transfer data only to provide or improve the single, user-facing purpose of subtitle translation and dubbing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>6. Permissions Justification</h2>
+      <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Permission</th><th>Why it is needed</th></tr></thead>
+        <tbody>
+          <tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Save settings and your token locally, and keep the subtitle data for the video you are dubbing (original and translated cues, which can be very large for videos that are several hours long) on your device, so it is not lost when the browser is restarted and does not hit the default storage quota.</td></tr>
+          <tr><td><code>activeTab</code>, <code>tabs</code></td><td>Find and talk to the tab with the video player and detect navigation/reload so dubbing stays attached to the right video. Tab URLs are not collected or transmitted.</td></tr>
+          <tr><td><code>webRequest</code></td><td>Detect subtitle file requests (.vtt, .srt, XML, JSON) made by the video player so their text can be translated and dubbed.</td></tr>
+          <tr><td><code>declarativeNetRequest</code></td><td>Adjust request headers when fetching subtitle files restricted by CDN referrer/CORS rules.</td></tr>
+          <tr><td><code>scripting</code></td><td>Run synchronization code in the video page to follow play, pause and seek.</td></tr>
+          <tr><td><code>offscreen</code></td><td>Play audio in an offscreen document, because a Manifest V3 service worker cannot play audio or stay alive.</td></tr>
+          <tr><td><code>notifications</code></td><td>Show a short alert when subtitles are ready or a task finishes.</td></tr>
+          <tr><td><code>downloads</code></td><td>Save the subtitle file (.srt) you export with the "Download .SRT" button to your device.</td></tr>
+          <tr><td>Host access <code>&lt;all_urls&gt;</code> and content scripts</td><td>Video can be on any website, and your own TTS server can be at any address you enter. Content scripts load on web pages (excluding sensitive sites such as Gmail, Google accounts and AI chat sites) and only read subtitle and playback information of video players.</td></tr>
+          <tr><td><code>https://translate.googleapis.com/*</code></td><td>Send subtitle text to Google Translate for translation.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><strong>Remote code:</strong> OmniDub does not load or execute remote JavaScript or WebAssembly code. TTS services return audio data only.</p>
+    </section>
+
+    <section>
+      <h2>7. Your Choices</h2>
+      <ul>
+        <li>Turn OmniDub off from the popup. Choose voice option 1 or 3 so subtitle text is not sent to the OmniDub voice service.</li>
+        <li>Edit or delete your settings, token and saved subtitles in the extension at any time.</li>
+        <li>Uninstalling the extension removes all data stored on your device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Access and Deletion Requests</h2>
+      <p>You can ask us to show or delete the data held on the OmniDub voice service (Telegram ID, username, block flag and request counter) by emailing the address below, or by messaging the OmniDub Telegram bot or group with your Telegram ID. We will respond within 30 days. Deleting this data ends your access to the voice service; a record may be kept where needed to prevent abuse or comply with law.</p>
+    </section>
+
+    <section>
+      <h2>9. Children's Privacy</h2>
+      <p>OmniDub is a general-audience tool and is not directed to children under 13 (or under 16 in the EU). We do not knowingly collect personal data from children. If you believe a child has provided data, contact us and we will delete it.</p>
+    </section>
+
+    <section>
+      <h2>10. Changes to This Policy</h2>
+      <p>We will update the "Effective Date" above when this policy changes, and describe material changes in the extension's store listing or release notes before they take effect.</p>
+    </section>
+
+    <section>
+      <h2>11. Contact</h2>
+      <ul>
+        <li><strong>Developer:</strong> Quang Minh Nguyen</li>
+        <li><strong>Email:</strong> <a href="mailto:ngquangminh2128@gmail.com">ngquangminh2128@gmail.com</a></li>
+        <li><strong>Source code:</strong> <a href="https://github.com/nqm2128/omnidub-ai-subtitle-dubbing" target="_blank" rel="noopener">github.com/nqm2128/omnidub-ai-subtitle-dubbing</a></li>
+        <li><strong>Issues:</strong> <a href="https://github.com/nqm2128/omnidub-ai-subtitle-dubbing/issues" target="_blank" rel="noopener">github.com/nqm2128/omnidub-ai-subtitle-dubbing/issues</a></li>
+      </ul>
+    </section>
+
+  </div>
+  <div class="footer"><p>&copy; 2026 OmniDub: Lồng tiếng phụ đề AI.</p></div>
+</div>
+</body>
+</html>
